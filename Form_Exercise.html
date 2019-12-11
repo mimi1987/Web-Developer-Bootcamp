@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <div>
+      <form>
+        <div>
+          <label for="first_name">First Name: </label>
+          <input id="first_name" type="text" name="first_name" placeholder="Max" required>
+          <label for="last_name">Last Name: </label>
+          <input id="last_name" type="text" name="last_name" placeholder="Mustermann" required>
+        </div>
+        <div>
+          <label for="gender_choice">Female: </label>
+          <input id="gender_choice" type="radio" name="gender_choice" value="female">
+          <label for="gender_choice">Male: </label>
+          <input id="gender_choice" type="radio" name="gender_choice" value="male">
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input id="email" type="email" name="email_address" placeholder="max.mustermann@gmail.com" required>
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" placeholder="**********" minlength="8" required>
+        </div>
+        <div>
+          <label for="birth">Birthday: </label>
+          <select id="birth" name="user_birth_month">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <select id="birth" name="user_birth_day">
+            <option>10</option>
+            <option>11</option>
+            <option>30</option>
+          </select>
+          <select id="birth" name="user_birth_year">
+            <option>1985</option>
+            <option>1986</option>
+            <option>1987</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

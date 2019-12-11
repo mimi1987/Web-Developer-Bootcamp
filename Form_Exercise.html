@@ -24,25 +24,32 @@
           <label for="email">Email: </label>
           <input id="email" type="email" name="email_address" placeholder="max.mustermann@gmail.com" required>
           <label for="password">Password</label>
-          <input id="password" type="password" name="password" placeholder="**********" minlength="8" required>
+          <input id="password" type="password" name="password" placeholder="**********" pattern=".{5,15}" required title="Password should have between 5 and 15 characters!">
         </div>
         <div>
           <label for="birth">Birthday: </label>
           <select id="birth" name="user_birth_month">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
+            <option>Month</option>
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
           </select>
           <select id="birth" name="user_birth_day">
+            <option>Day</option>
             <option>10</option>
             <option>11</option>
             <option>30</option>
           </select>
           <select id="birth" name="user_birth_year">
+            <option>Year</option>
             <option>1985</option>
             <option>1986</option>
             <option>1987</option>
           </select>
+        </div>
+        <div>
+          <label for="agreement">I agree to the terms and conditions</label>
+          <input type="checkbox" id="agreement" name="agreement" value="True" required>
         </div>
         <div>
           <input type="submit">
